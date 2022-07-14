@@ -54,6 +54,7 @@ def relationship_status(from_member, to_member, social_graph):
         else:
             continue
     else:
+<<<<<<< HEAD
         return "no relationship"       
     
 def tic_tac_toe(board):
@@ -77,33 +78,55 @@ def tic_tac_toe(board):
     '''
     # Replace `pass` with your code. 
     # Stay within the function. Only use the parameters as input. The function should return your answer.   
+=======
+        return "no relationship"          
+
+def tic_tac_toe(board):
+>>>>>>> 304acf55d1d8f50730c2507a3e24d8fb95ea06e9
     horizontal_check = [x for x in board]
     vertical_check = [x for x in zip(*board)]
     updown_diagonal_check = [board[i][i] for i in range(len(board))]
     downup_diagonal_check = [board[len(board)-1-i][i] for i in range(len(board))]
     
+<<<<<<< HEAD
     for a,b in enumerate(horizontal_check):
         if a < len(horizontal_check):
             if all([c=="X" for c in b]):
                 return "X"
             elif all([c=="O" for c in b]):
+=======
+    for j,m in enumerate(horizontal_check):
+        if j < len(horizontal_check):
+            if all([s=="X" for s in m]):
+                return "X"
+            elif all([s=="O" for s in m]):
+>>>>>>> 304acf55d1d8f50730c2507a3e24d8fb95ea06e9
                 return "O"
             else:
                 continue
         else:
             break
                       
+<<<<<<< HEAD
     for e,f in enumerate(vertical_check):
         if e < len(vertical_check):
             if all([c=="X" for c in f]):
                 return "X"
             elif all([c=="O" for c in f]):
+=======
+    for l,n in enumerate(vertical_check):
+        if l < len(vertical_check):
+            if all([s=="X" for s in n]):
+                return "X"
+            elif all([s=="O" for s in n]):
+>>>>>>> 304acf55d1d8f50730c2507a3e24d8fb95ea06e9
                 return "O"
             else:
                 continue
         else:
             break
                       
+<<<<<<< HEAD
     if all([c=="X" for c in updown_diagonal_check]):
           return "X"
     elif all([c=="O" for c in updown_diagonal_check]):
@@ -114,6 +137,19 @@ def tic_tac_toe(board):
           return "O"
     else:
           return "NO WINNER"
+=======
+    if all([s=="X" for s in updown_diagonal_check]):
+          return "X"
+    elif all([s=="O" for s in updown_diagonal_check]):
+          return "O"
+    elif all([s=="X" for s in downup_diagonal_check]):
+          return "X"
+    elif all([s=="O" for s in downup_diagonal_check]):
+          return "O"
+    else:
+          return "NO WINNER"    
+
+>>>>>>> 304acf55d1d8f50730c2507a3e24d8fb95ea06e9
 def eta(first_stop, second_stop, route_map):
     '''ETA. 
     25 points.
@@ -140,6 +176,7 @@ def eta(first_stop, second_stop, route_map):
     '''
     # Replace `pass` with your code. 
     # Stay within the function. Only use the parameters as input. The function should return your answer.
+<<<<<<< HEAD
     destination_routes = route_map.keys()
     a = [x for x in destination_routes]
     b = [y for y,z in a]
@@ -160,3 +197,6 @@ def eta(first_stop, second_stop, route_map):
                 elif c[e] == second_stop:
                     first_stop_mins = int(legs[b[e],c[e]]['travel_time_mins'])
                     return recurring_mins + first_stop_mins
+=======
+    pass
+>>>>>>> 304acf55d1d8f50730c2507a3e24d8fb95ea06e9

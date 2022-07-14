@@ -97,7 +97,11 @@ def shift_by_letter(letter, letter_shift):
         return " "
     else:
         return "Error"
+<<<<<<< HEAD
 
+=======
+    z
+>>>>>>> 304acf55d1d8f50730c2507a3e24d8fb95ea06e9
 def vigenere_cipher(message, key):
     '''Vigenere Cipher. 
     15 points.
@@ -187,6 +191,10 @@ def scytale_cipher(message, shift):
     '''
     # Replace `pass` with your code. 
     # Stay within the function. Only use the parameters as input. The function should return your answer.
+<<<<<<< HEAD
+=======
+    def scytale_cipher(message, shift):
+>>>>>>> 304acf55d1d8f50730c2507a3e24d8fb95ea06e9
     message = str(message)
     shift= int(shift)
     cipher = ""
