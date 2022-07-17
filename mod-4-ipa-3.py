@@ -46,16 +46,13 @@ def relationship_status(from_member, to_member, social_graph):
             return "follower"
         else:
             continue
-    else:
-        break
     for c,d in enumerate(to_member_following):
         if c== from_member:
             return "followed by"
         else:
             continue
     else:
-        return "no relationship"       
-    
+        return "no relationship" 
 def tic_tac_toe(board):
     '''Tic Tac Toe. 
     25 points.
@@ -77,9 +74,6 @@ def tic_tac_toe(board):
     '''
     # Replace `pass` with your code. 
     # Stay within the function. Only use the parameters as input. The function should return your answer.   
-        return "no relationship"          
-
-def tic_tac_toe(board):
     horizontal_check = [x for x in board]
     vertical_check = [x for x in zip(*board)]
     updown_diagonal_check = [board[i][i] for i in range(len(board))]
@@ -153,7 +147,7 @@ def eta(first_stop, second_stop, route_map):
         if d == first_stop:
             while(True):
                 if c[e] != second_stop:
-                    stop_mins = int(legs[b[e],c[e]]["travel_time_mins"])
+                    stop_mins = int(route_map[b[e],c[e]]["travel_time_mins"])
                     recurring_mins += stop_mins
                     if e == len(b) - 1:
                         e = 0
@@ -161,6 +155,6 @@ def eta(first_stop, second_stop, route_map):
                         e += 1
                     continue
                 elif c[e] == second_stop:
-                    first_stop_mins = int(legs[b[e],c[e]]['travel_time_mins'])
+                    first_stop_mins = int(route_map[b[e],c[e]]['travel_time_mins'])
                     return recurring_mins + first_stop_mins
 
