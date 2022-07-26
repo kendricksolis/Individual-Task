@@ -131,6 +131,3 @@ def body_mass_index(weight, height):
     height_inches=12*int(feet.strip("'"))+int(inches.strip("'"))
     h=height_inches/39.37
     return m/(h**2)
-
-
-

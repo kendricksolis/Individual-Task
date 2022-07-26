@@ -232,5 +232,9 @@ def scytale_decipher(message, shift):
         for c,d in enumerate(output):
             output = output[:new] + b + output[new+1:]
     return output
+<<<<<<< HEAD:mod-3-ipa-2.py
         
 
+=======
+   
+>>>>>>> 5ca5b70ee69f753369e73f2cf6e14b5e49c3a284:mod-3-ipa-1.py
