@@ -1,4 +1,4 @@
- '''Module 3: Individual Programming Assignment 1
+'''Module 3: Individual Programming Assignment 1
 Thinking Like a Programmer
 This assignment covers your intermediate proficiency with Python.
 '''
